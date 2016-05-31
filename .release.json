@@ -1,5 +1,5 @@
 {
-    "non-interactive": true,
+    "non-interactive": false,
     "dry-run": false,
     "verbose": false,
     "force": false,
@@ -12,16 +12,16 @@
     "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]",
     "requireCleanWorkingDir": false,
     "src": {
-        "pushRepo": null,
+        "pushRepo": "https://github.com/enlore/seele",
         "beforeStartCommand": false,
         "beforeStageCommand": false,
         "afterReleaseCommand": false
     },
     "dist": {
-        "repo": false,
+        "repo": "http://github.com/ohmubus/seele",
         "stageDir": ".stage",
-        "baseDir": "dist",
-        "files": ["**/*"],
+        "baseDir": "./",
+        "files": ["seele.js"],
         "pkgFiles": null,
         "beforeStageCommand": false,
         "afterReleaseCommand": false
